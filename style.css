@@ -1,56 +1,116 @@
 body {
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
 }
 
-section>header {
-    font-size: 28px;
-    font-weight: bold;
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    text-align: center;
+    position: relative;
+  }
+}
+
+nav header {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 10px 0 10px;
+}
+
+nav {
+  position: fixed;
+  background-color: rgb(240, 246, 255);
+  width: 300px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 20px;
+}
+
+nav li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+main {
+  margin: 0 30px 30px 340px;
+  max-width: 600px;
+}
+
+section header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+#browser_APIs,
+#a_web_page_loading_process {
+  width: 100%;
 }
 
 pre {
-    background-color: rgba(220, 220, 220, .5);
+  background-color: rgba(220, 220, 220, 0.5);
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .bad_practice {
-    background-color: #fef7f7;
+  background-color: #fef7f7;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 4px;
 }
 
-pre>code {
-    background: transparent;
+pre code {
+  background: transparent;
 }
 
 code {
-    background-color: rgba(220, 220, 220, .5);
-    border-radius: 2px;
-    padding: 0 2px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 2px;
+  padding: 2px;
+  font-size: 16px;
 }
 
 #chris {
-    font-family: 'helvetica neue', helvetica, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 200, 0.6);
-    background: rgba(0, 0, 200, 0.3);
-    color: rgba(0, 0, 200, 0.6);
-    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
-    border-radius: 10px;
-    padding: 3px 10px;
-    display: inline-block;
-    cursor: pointer;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 200, 0.6);
+  background: rgba(0, 0, 200, 0.3);
+  color: rgba(0, 0, 200, 0.6);
+  box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .note {
-    background-color: #fff3d4;
-    padding: 10px 40px 10px 20px;
+  background-color: #fff6e1;
+  padding: 10px 40px 10px 20px;
 }
 
 h3 {
-    background-color: black;
-    color: white;
-    padding: 4px 2px 4px 20px;
+  background-color: rgb(0, 0, 53);
+  color: white;
+  margin-top: 30px;
+  padding: 4px 2px 4px 20px;
 }
