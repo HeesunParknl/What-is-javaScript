@@ -3,4 +3,4 @@ What is JavaScript?
 
 
  *reference
-   All the documentation in this page is taken from MDN
+  : All the documentation in this page is taken from MDN
